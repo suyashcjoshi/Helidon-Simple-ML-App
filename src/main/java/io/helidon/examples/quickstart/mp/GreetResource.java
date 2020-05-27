@@ -139,7 +139,7 @@ public class GreetResource {
         String msg = String.format("%s %s!", greetingProvider.getMessage(), who);
 
         return JSON.createObjectBuilder()
-                .add("message", msg)
+                .add("message", "Hello, Your Machine Learning Prediction goes here")
                 .build();
     }
 }
