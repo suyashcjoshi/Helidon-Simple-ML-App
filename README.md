@@ -1,4 +1,4 @@
-# Helidon Quickstart MP Example
+# Helidon Quickstart MP Example for Machine Learning Project
 
 This example implements a simple Hello World REST service using MicroProfile.
 
@@ -56,13 +56,3 @@ docker build -t helidon-quickstart-mp .
 docker run --rm -p 8080:8080 helidon-quickstart-mp:latest
 ```
 
-Exercise the application as described above
-
-## Deploy the application to Kubernetes
-
-```
-kubectl cluster-info                         # Verify which cluster
-kubectl get pods                             # Verify connectivity to cluster
-kubectl create -f app.yaml               # Deploy application
-kubectl get service helidon-quickstart-mp  # Verify deployed service
-```
